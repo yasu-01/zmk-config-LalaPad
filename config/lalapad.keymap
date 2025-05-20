@@ -173,6 +173,15 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        volume_down_up: behavior_sensor_rotate_volume_u {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
+
+            tap-ms = <20>;
+            label = "behavior_sensor_rotate_volume_down_up";
+        };
     };
 
     combos {
@@ -236,7 +245,7 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+            sensor-bindings = <&scroll_down_up>, <&volume_down_up>;
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4

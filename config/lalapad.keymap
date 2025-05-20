@@ -225,7 +225,7 @@
 
             bindings = <
 &kp TILDE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &trans  &kp EQUAL  &kp MINUS
-&kp CAPSLOCK  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME       &kp END          &kp KP_ASTERISK  &trans  &kp SEMI   &kp DELETE
+&kp CAPSLOCK  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME       &kp END          &kp KP_ASTERISK  &trans  &kp SEMI   &kp SQT
 &trans        &trans        &trans        &trans        &trans        &trans        &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &trans  &kp SLASH  &kp BACKSLASH
 &trans        &trans        &trans        &kp DELETE    &trans        &trans        &trans         &kp DELETE       &trans           &trans  &trans     &trans
                             &trans        &trans        &trans        &trans        &trans         &trans           &trans           &trans

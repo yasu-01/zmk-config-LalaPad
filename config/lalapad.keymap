@@ -198,8 +198,13 @@
         };
 
         LangToggle {
-            bindings = <&kp LANG5>;
+            bindings = <&kp LA(GRAVE)>;
             key-positions = <0 3>;
+        };
+
+        ctrl-h {
+            bindings = <&kp LC(H)>;
+            key-positions = <17 16>;
         };
     };
 

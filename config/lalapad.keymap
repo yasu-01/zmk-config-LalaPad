@@ -189,17 +189,17 @@
 
         kana {
             bindings = <&kp LANG1>;
-            key-positions = <0 1>;
+            key-positions = <0 2>;
         };
 
         eng {
             bindings = <&kp LANG2>;
-            key-positions = <0 2>;
+            key-positions = <0 3>;
         };
 
         LangToggle {
             bindings = <&kp LA(GRAVE)>;
-            key-positions = <0 3>;
+            key-positions = <0 1>;
         };
 
         ctrl-h {

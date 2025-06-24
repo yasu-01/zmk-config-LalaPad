@@ -194,7 +194,7 @@
 
         eng {
             bindings = <&kp LANG2>;
-            key-positions = <0 3>;
+            key-positions = <0 1 2>;
         };
 
         LangToggle {
@@ -206,6 +206,11 @@
             bindings = <&kp LC(H)>;
             key-positions = <17 16>;
         };
+
+        SystemLayer3 {
+            bindings = <&mo 3>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
@@ -216,11 +221,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp LANGUAGE_5  &kp Q         &kp W         &kp E            &kp R                &kp T               &kp Y             &kp U        &kp I            &kp O       &kp P         &kp BACKSPACE
-&kp TAB         &kp A         &kp S         &kp D            &kp F                &kp G               &kp H             &kp J        &kp K            &kp L       &kp SEMI      &kp ENTER
-&kp LSHFT       &kp Z         &kp X         &kp C            &kp V                &kp B               &kp N             &kp M        &kp COMMA        &kp PERIOD  &kp UP_ARROW  &kp BACKSLASH
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE    &mo SECONDARY_LAYER  &mo TERTIARY_LAYER  &mo SYSTEM_LAYER  &kp ENTER    &kp SPACE        &kp LEFT    &kp DOWN      &kp RIGHT
-                              &allow_end    &allow_pagedown  &allow_home          &allow_pageup       &allow_pageup     &allow_home  &allow_pagedown  &allow_end
+&kp LA(GRAVE)  &kp Q         &kp W         &kp E            &kp R                &kp T               &kp Y          &kp U        &kp I            &kp O       &kp P         &kp BACKSPACE
+&kp TAB        &kp A         &kp S         &kp D            &kp F                &kp G               &kp H          &kp J        &kp K            &kp L       &kp SEMI      &kp ENTER
+&kp LSHFT      &kp Z         &kp X         &kp C            &kp V                &kp B               &kp N          &kp M        &kp COMMA        &kp PERIOD  &kp UP_ARROW  &kp RIGHT_SHIFT
+&kp LCTRL      &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE    &mo SECONDARY_LAYER  &mo TERTIARY_LAYER  &kp DELETE     &kp ENTER    &kp SPACE        &kp LEFT    &kp DOWN      &kp RIGHT
+                             &allow_end    &allow_pagedown  &allow_home          &allow_pageup       &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
@@ -229,10 +234,10 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp TILDE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &trans  &kp EQUAL  &kp MINUS
-&kp CAPSLOCK  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME       &kp END          &kp KP_ASTERISK  &trans  &kp SEMI   &kp SQT
-&trans        &trans        &trans        &trans        &trans        &trans        &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &trans  &kp SLASH  &kp BACKSLASH
-&trans        &trans        &trans        &kp DELETE    &trans        &trans        &trans         &kp DELETE       &trans           &trans  &trans     &trans
+&kp TILDE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &trans           &kp EQUAL    &kp MINUS
+&kp CAPSLOCK  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME       &kp END          &kp KP_ASTERISK  &trans           &kp AT_SIGN  &kp SQT
+&trans        &trans        &trans        &trans        &trans        &trans        &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_MULTIPLY  &kp SLASH    &kp BACKSLASH
+&trans        &trans        &trans        &kp DELETE    &trans        &trans        &trans         &kp DELETE       &trans           &trans           &trans       &trans
                             &trans        &trans        &trans        &trans        &trans         &trans           &trans           &trans
             >;
         };

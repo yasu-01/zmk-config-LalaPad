@@ -216,11 +216,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp LANG_ZENKAKUHANKAKU  &kp Q         &kp W         &kp E            &kp R                &kp T               &kp Y             &kp U        &kp I            &kp O       &kp P         &kp BACKSPACE
-&kp TAB                  &kp A         &kp S         &kp D            &kp F                &kp G               &kp H             &kp J        &kp K            &kp L       &kp SEMI      &kp ENTER
-&kp LSHFT                &kp Z         &kp X         &kp C            &kp V                &kp B               &kp N             &kp M        &kp COMMA        &kp PERIOD  &kp UP_ARROW  &kp RIGHT_SHIFT
-&kp LCTRL                &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE    &mo SECONDARY_LAYER  &mo TERTIARY_LAYER  &mo SYSTEM_LAYER  &kp ENTER    &kp SPACE        &kp LEFT    &kp DOWN      &kp RIGHT
-                                       &allow_end    &allow_pagedown  &allow_home          &allow_pageup       &allow_pageup     &allow_home  &allow_pagedown  &allow_end
+&kp LANGUAGE_5  &kp Q         &kp W         &kp E            &kp R                &kp T               &kp Y             &kp U        &kp I            &kp O       &kp P         &kp BACKSPACE
+&kp TAB         &kp A         &kp S         &kp D            &kp F                &kp G               &kp H             &kp J        &kp K            &kp L       &kp SEMI      &kp ENTER
+&kp LSHFT       &kp Z         &kp X         &kp C            &kp V                &kp B               &kp N             &kp M        &kp COMMA        &kp PERIOD  &kp UP_ARROW  &kp BACKSLASH
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE    &mo SECONDARY_LAYER  &mo TERTIARY_LAYER  &mo SYSTEM_LAYER  &kp ENTER    &kp SPACE        &kp LEFT    &kp DOWN      &kp RIGHT
+                              &allow_end    &allow_pagedown  &allow_home          &allow_pageup       &allow_pageup     &allow_home  &allow_pagedown  &allow_end
             >;
         };
 

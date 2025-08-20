@@ -217,7 +217,10 @@
         MAC_lang_change: lang_change {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&macro_wait_time 20>, <&kp TILDE>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp LA(TILDE) &kp LEFT_ALT>;
 
             label = "LANG_CHANGE";
         };

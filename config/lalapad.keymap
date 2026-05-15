@@ -217,14 +217,10 @@
         MAC_lang_change: lang_change {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp SQT>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
+            bindings = <&macro_press &kp LALT>
+                , <&macro_tap &kp SQT>
+                , <&macro_release &kp LALT>
+                ;
             label = "LANG_CHANGE";
         };
     };
